@@ -8,3 +8,7 @@ Currently the items in this book are assorted. It is my goal to add new items an
 
 As a final note, _Effective C++_ and _Effective Java_ are two of my favorite technical books. I appreciate not only the soundness of their contents, but the brevity of their writing style. I hope that Effective Swift has the same value proposition. Please enjoy!
 
+### Items
+
+* [Prefer `let` over `var`](items/prefer-let-over-var.md)
+
