@@ -12,4 +12,5 @@ As a final note, _Effective C++_ and _Effective Java_ are two of my favorite tec
 
 * [Prefer `let` over `var`](items/prefer-let-over-var.md)
 * [Use `map` for transforming values and nothing else](items/use-map-for-transforming-values-and-nothing-else.md)
+* [Prefer enumerations with raw values over constants](items/prefer-enums-with-raw-values-over-constants.md)
 
