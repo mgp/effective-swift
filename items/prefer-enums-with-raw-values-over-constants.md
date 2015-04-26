@@ -15,15 +15,15 @@ The client may want to serialize an instance of this struct as a JSON object for
 
 ```swift
 extension UserExerciseFeedback {
-  private enum JSONKeys: String {
+  private enum JSONKey: String {
     case ExerciseID = "exercise_id"
     case Feedback = "feedback"
   }
 
   func toJSON() -> [String: AnyObject] {
     let json = [
-      JSONKeys.ExerciseID.rawValue: exerciseId,
-      JSONKeys.Feedback.rawValue: feedback
+      JSONKey.ExerciseID.rawValue: exerciseId,
+      JSONKey.Feedback.rawValue: feedback
     ]
     return json
   }
