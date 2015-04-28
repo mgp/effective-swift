@@ -14,6 +14,5 @@ This bestows on the value the property of *immutability*, which has the followin
 
 ### other items:
 
-* avoid implicitly unwrapped optionals
 * implement printable for value types
 

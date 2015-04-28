@@ -14,4 +14,5 @@ As a final note, _Effective C++_ and _Effective Java_ are two of my favorite tec
 * [Use `map` for transforming values and nothing else](items/use-map-for-transforming-values-and-nothing-else.md)
 * [Prefer enumerations with raw values over constants](items/prefer-enums-with-raw-values-over-constants.md)
 * [Create focused and scoped types](items/create-focused-and-scoped-types.md)
+* [Avoid implicitly unwrapped optionals](items/avoid-implicitly-unwrapped-optionals.md)
 
