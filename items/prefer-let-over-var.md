@@ -7,11 +7,11 @@ Whenever possible, declare a value using `let` instead of using `var`, thereby d
 In Swift 1.0, you do not need to sacrifice `let` for `var` to cope with conditionals. For example, consider a `UserProgress` enum that specifies whether the user has not started, has started, or has finished watching a video. Given the length of a video in seconds and how many seconds the user has watched, we can compute the `UserProgress` value as:
 
 ```swift
-var progress = UserProgress.NotStarted
+var progress = UserProgress.notStarted
 if secondsWatched >= videoLength {
-  progress = .Finished
+  progress = .finished
 } else if secondsWatched > 0 {
-  progress = .Started
+  progress = .started
 }
 ```
 
@@ -22,11 +22,11 @@ func progressForSecondsWatched(
     secondsWatched: NSTimeInterval,
     ofVideoWithLength videoLength: NSTimeInterval) -> UserProgress {
   if secondsWatched >= videoLength {
-    return .Finished
+    return .finished
   } else if secondsWatched > 0 {
-    return .Started
+    return .started
   } else {
-    return .NotStarted
+    return .notStarted
   }
 }
 ```
@@ -42,11 +42,11 @@ In Swift 1.2, the new rule is that a `let` constant must be initialized before i
 ```swift
 let progress: UserProgress
 if (secondsWatched >= videoLength) {
-  progress = .Finished
+  progress = .finished
 } else if (secondsWatched > 0) {
-  progress = .Started
+  progress = .started
 } else {
-  progress = .NotStarted
+  progress = .notStarted
 }
 ```
 

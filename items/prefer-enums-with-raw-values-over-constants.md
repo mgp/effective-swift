@@ -6,7 +6,7 @@ Consider a `struct` named `UserExerciseFeedback` that pairs the unique identifie
 
 ```swift
 struct UserExerciseFeedback {
-  let exerciseId: String
+  let exerciseID: String
   let feedback: String
 }
 ```
@@ -16,14 +16,14 @@ The client may want to serialize an instance of this struct as a JSON object for
 ```swift
 extension UserExerciseFeedback {
   private enum JSONKey: String {
-    case ExerciseID = "exercise_id"
-    case Feedback = "feedback"
+    case exerciseID = "exercise_id"
+    case feedback = "feedback"
   }
 
   func toJSON() -> [String: AnyObject] {
     let json = [
-      JSONKey.ExerciseID.rawValue: exerciseId,
-      JSONKey.Feedback.rawValue: feedback
+      JSONKey.exerciseID.rawValue: exerciseId,
+      JSONKey.feedback.rawValue: feedback
     ]
     return json
   }
@@ -47,8 +47,8 @@ For example, consider `UIAlertView` and the `UIAlertViewDelegate` method `alertV
 
 ```swift
 enum RequestDataErrorButton: Int /* button index */ {
-  case Cancel = 0
-  case Retry = 1
+  case cancel = 0
+  case retry = 1
 }
 ```
 
@@ -58,9 +58,9 @@ When `alertView(_:clickedButtonAtIndex:)` is invoked on the delegate, the `butto
 func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
   if let tappedButton = RequestDataErrorButton(rawValue: buttonIndex) {
     switch tappedButton {
-    case .Cancel:
+    case .cancel:
       cancelRequest()
-    case .Retry:
+    case .retry:
       retryRequest()
   } else {
     println("Unrecognized button index: \(buttonIndex)")

@@ -107,14 +107,14 @@ Also consider the extension from the item _[prefer enumerations with raw values 
 ```swift
 extension UserExerciseFeedback {
   private enum JSONKey: String {
-    case ExerciseID = "exercise_id"
-    case Feedback = "feedback"
+    case exerciseID = "exercise_id"
+    case feedback = "feedback"
   }
 
   func toJSON() -> [String: AnyObject] {
     let json = [
-      JSONKeys.ExerciseID.rawValue: exerciseId,
-      JSONKeys.Feedback.rawValue: feedback
+      JSONKeys.exerciseID.rawValue: exerciseId,
+      JSONKeys.feedback.rawValue: feedback
     ]
     return json
   }
